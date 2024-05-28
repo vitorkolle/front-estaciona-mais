@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Estaciona Mais</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'background': "url('/img/background .png')"
+                    },
+                    colors: {
+                        'default-blue': "#03587F",
+                        'button': '#EFF0EE',
+                        'navy-blue': '#03587F'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="flex flex-col bg-default-blue items-center">
+    <div class="w-screen h-screen flex flex flex-col">
+        <img src="./img/background .png" alt="" class="w-screen h-3/5 opacity-50">
+        <img src="./img/logo.svg" alt="" class="z-10 absolute inset-x-1/3 mx-16 mt-60 w-3/12">
+    </div>
+
+    <div class="w-1/2 h-32 flex justify-center" style="margin-top: -30vh; margin-bottom: 5vh;">
+        <p class="text-4xl font-sans w-full text-center text-stone-50">Somos a Estaciona +, uma empresa especializada em gerenciamento de vagas de estacionamento,
+            promovendo a segurança do seu veículo.</p>
+    </div>
+
+    <a href="./PageCadastro/cadastro.html">
+        <button class="bg-button rounded-lg w-96 h-20">
+            <p class="text-4xl text-navy-blue">Faça um Orçamento</p>
+        </button>
+    </a>
+
+
+</body>
+
+</html>
